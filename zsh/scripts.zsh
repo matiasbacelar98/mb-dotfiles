@@ -5,16 +5,16 @@ function reload() {
 }
 
 # Search in command history
-histgrep() {
+function histgrep() {
   history | grep "$1"
 }
 
 # Search for files by name
-f() {
+function f() {
   find . -iname "*$1*"
 }
 
 # Test network
-pingtest(){
+function pingtest(){
   ping -c 4 1.1.1.1 && echo "✅ Network OK" || echo "❌ Network Issue"
 }
