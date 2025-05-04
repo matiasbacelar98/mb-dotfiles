@@ -2,9 +2,9 @@
 
 This repository contains my configuration files for my terminal & shell of choice.
 
-- [.zshrc](https://github.com/nvim-lua/kickstart.nvim) (zsh configuration)
-- [starship.toml]() (customizable shell prompt)
-- [wezterm.lua]() (terminal)
+- [.zshrc](https://github.com/matiasbacelar98/mb-dotfiles/blob/main/zsh/.zshrc) (zsh configuration)
+- [starship.toml](https://github.com/matiasbacelar98/mb-dotfiles/blob/main/starship/starship.toml) (customizable shell prompt)
+- [wezterm.lua](https://github.com/matiasbacelar98/mb-dotfiles/blob/main/wezterm/wezterm.lua) (terminal)
 
 ## Requirements
 
@@ -13,4 +13,4 @@ This repository contains my configuration files for my terminal & shell of choic
 
 ## Screenshots
 ![first example](examples/example_1.png)
-![second example](examples/example_1.png)
+![second example](examples/example_2.png)
