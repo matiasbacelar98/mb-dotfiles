@@ -11,6 +11,16 @@ This repository contains my configuration files for my terminal & shell of choic
 - I use WSL (ubuntu), so there are some configurations that only works in this environment, also i like to keep some config in windows, i only have everything related to my shell in WSL.
 - Nerd Font (it's for the icons) in my case i use [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
+
+## Links
+- [Wezterm](https://wezterm.org/)
+- [Starship](https://starship.rs/)
+- [ZSH Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- [ZSH Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+- [ZSH Eza](https://github.com/z-shell/zsh-eza)
+- [ZSH Command not found](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found)
+- [ZSH Copypath](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath)
+
 ## Screenshots
 ![first example](examples/example_1.png)
 ![second example](examples/example_2.png)
