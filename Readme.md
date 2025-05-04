@@ -1,6 +1,6 @@
 # MB dotfiles ⚙️
 
-This repository contains my configuration files for my terminal & shell of choice. Feel free to add it to your own dotfiles.
+This repository contains my configuration files for my terminal & shell of choice.
 
 - [.zshrc](https://github.com/nvim-lua/kickstart.nvim) (zsh configuration)
 - [starship.toml]() (customizable shell prompt)
