@@ -6,7 +6,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # --- History ---
-# Avoid duplicates in history 
+# Avoid duplicates in history
 setopt histignorealldups
 
 # Synchronize history between terminals
@@ -19,16 +19,23 @@ HISTFILE=~/.zsh_history
 
 # --- Plugins ---
 # Enable autosuggestions from command history
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable syntax highlighting for commands
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Enable 'eza' plugin for a more powerful 'ls' command
-source ~/.zsh/zsh-eza/zsh-eza.plugin.zsh
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Enable 'copypath' plugin to copy the full path of files or directories
-source ~/.zsh/copypath/copypath.plugin.zsh
+source ~/.zsh/plugins/copypath/copypath.plugin.zsh
+
+# --- Zsh eza ---
+alias ls='eza --icons=always'
+alias l='eza --git-ignore $eza_params'
+alias ll='eza --all --header --long $eza_params'
+alias llm='eza --all --header --long --sort=modified $eza_params'
+alias la='eza -lbhHigUmuSa'
+alias lx='eza -lbhHigUmuSa@'
+alias lt='eza --tree $eza_params'
+alias tree='eza --tree $eza_params'
 
 # --- Command Not Found ---
 # (This handles "command not found" situations)
@@ -40,7 +47,7 @@ fi
 # --- Completion System ---
 # Load the completion system
 autoload -Uz compinit
- 
+
 # Initializes the Zsh completion system
 compinit
 
@@ -66,6 +73,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd' 
 
 # --- Initializations ---
 eval "$(starship init zsh)" # Initializes the Starship prompt for Zsh
+print -Pn "\e]0;zsh\a" # Change tab name to "zsh"
 
 # --- Scripts ---
-source ~/.zsh/scripts.zsh
+source ~/.zsh/scripts/general.zsh
