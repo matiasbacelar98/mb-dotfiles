@@ -5,6 +5,8 @@ local M = {}
 
 -- Images
 M.bg_art = "E:/.config/wezterm/assets/bg-art.jpg"
+M.bg_blurred_darker = "E:/.config/wezterm/assets/bg-blurred-darker.png"
+M.bg_blurred = "E:/.config/wezterm/assets/bg-blurred.png"
 M.bg_image = M.bg_art
 
 -- Mouse bindings
