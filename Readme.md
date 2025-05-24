@@ -1,4 +1,4 @@
-# MB dotfiles ⚙️
+# MB dotfiles (WSL) ⚙️
 
 This repository contains my configuration files for my terminal & shell of choice.
 
@@ -18,8 +18,6 @@ This repository contains my configuration files for my terminal & shell of choic
 - [ZSH Autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [ZSH Syntax Highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [ZSH Eza](https://github.com/z-shell/zsh-eza)
-- [ZSH Command not found](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found)
-- [ZSH Copypath](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath)
 
 ## Screenshots
 

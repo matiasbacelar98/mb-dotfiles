@@ -24,9 +24,6 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Enable syntax highlighting for commands
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Enable 'copypath' plugin to copy the full path of files or directories
-source ~/.zsh/plugins/copypath/copypath.plugin.zsh
-
 # --- Zsh eza ---
 alias ls='eza --icons=always'
 alias l='eza --git-ignore $eza_params'
@@ -36,13 +33,6 @@ alias la='eza -lbhHigUmuSa'
 alias lx='eza -lbhHigUmuSa@'
 alias lt='eza --tree $eza_params'
 alias tree='eza --tree $eza_params'
-
-# --- Command Not Found ---
-# (This handles "command not found" situations)
-
-if [ -x /usr/lib/command-not-found ]; then
-  source /etc/zsh_command_not_found
-fi
 
 # --- Completion System ---
 # Load the completion system
@@ -77,3 +67,5 @@ print -Pn "\e]0;zsh\a" # Change tab name to "zsh"
 
 # --- Scripts ---
 source ~/.zsh/scripts/general.zsh
+source ~/.zsh/scripts/copypath.zsh
+source ~/.zsh/scripts/command-not-found.zsh
